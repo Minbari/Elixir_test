@@ -19,7 +19,7 @@ RUN curl -sL https://deb.nodesource.com/setup_15.x  | bash -
 RUN apt-get update && \
     apt-get install -y nodejs
 
-#RUN gem install htmlbeautifier
+# RUN gem install htmlbeautifier
 
 COPY setup-container.sh .
 RUN bash ./setup-container.sh
